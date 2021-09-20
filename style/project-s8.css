@@ -1,0 +1,84 @@
+.price-page{
+    width: 90vw;
+    height: 90vh;
+    margin: 20px 40px;
+    display: grid;
+    grid-template: 30fr 70fr / repeat(4, 25fr);
+    grid-template-areas:
+    "page-header page-header page-header page-header"
+    "plan-1 plan-2 plan-3 plan-4";
+}
+:root{
+    --primary-color: #5a06a4;
+    --secondary-color: #ffd2c5;
+    --third-color: #8c8b8b;
+    --verysmall-font: 16px;
+    --small-font: 18px;
+    --medium-font: 20px;
+    --large-font: 25px;
+    --verylarge-font: 40px;
+}
+.title{
+    width:70%;
+    display: inline-block;
+    margin: 0;
+}
+.page-header{
+    grid-area: page-header;
+    text-align: left;
+    padding: 0 120px;
+}
+.plan-card{
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 10px 30px 20px 30px;
+}
+.plan-card:hover{
+    transform: scale(1.05);
+    transition: 0.5s cubic-bezier(.61,.01,1,.61);
+}
+.plan-card-text{
+    margin: 30px
+}
+.plan-1 {
+    grid-area: plan-1;
+}
+.plan-2{
+    grid-area: plan-2;
+}
+.plan-3{
+    grid-area: plan-3;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+.plan-4{
+    grid-area: plan-4;
+}
+@media screen and (max-width: 700px) {
+    .price-page {
+        width: 100vw;
+        grid-template: 20fr 20fr 20fr 20fr 20fr / repeat(1, 100fr);
+        grid-template-areas:
+    "page-header"
+    "plan-1"
+    "plan-2"
+    "plan-3"
+    "plan-4";
+        margin: 0;
+        padding: 0;
+    }
+    .title {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .page-header {
+        padding: 0 20px;
+    }
+    .plan-card{
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin: 30px 100px;
+    }
+}

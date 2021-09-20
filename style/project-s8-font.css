@@ -1,0 +1,79 @@
+h1{
+    font-size: var(--verylarge-font);
+    color: var(--primary-color);
+}
+h2{
+    font-size: var(--verylarge-font);
+    color: var(--primary-color);
+    display: inline-block;
+    margin: 5px;
+
+}
+h3{
+    font-size: var(--medium-font);
+    color: var(--third-color) ;
+    margin: 0;
+}
+h4{
+    font-size: var(--small-font);
+    color: var(--primary-color);
+    margin: 5px;}
+h5{
+    font-size: var(--verysmall-font);
+    color: var(--third-color);
+    margin: 5px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    font-size: var(--verysmall-font);
+    color: var(--third-color) ;
+    margin: 10px;
+}
+ul li::before {
+    font-size: 1px;
+    content: " ";
+    padding: 10px;
+    margin-left: -1.3em;
+    margin-right: 15px;
+    background-color: grey;
+    -webkit-mask-image: url("../img/check-icon.png");
+    -webkit-mask-size: cover;
+    vertical-align: middle;
+}
+.monthly-class{
+    font-size: var(--large-font);
+    color: var(--third-color) ;
+}
+.plan-3 h2 {
+    color: white;
+    font-size: var(--verylarge-font);
+}
+.plan-3 h4{
+    color: var(--secondary-color);
+    font-size: var(--small-font);
+}
+.plan-3 h5{
+    color: var(--secondary-color);
+    font-size: var(--verysmall-font);
+}
+.plan-3 li{
+    color: var(--secondary-color);
+    font-size: var(--verysmall-font);
+    margin: 10px;
+}
+.plan-3 span{
+    font-size: var(--large-font);
+    color: var(--secondary-color) ;
+}
+@media screen and (max-width: 700px){
+    h1{
+        font-size: var(--large-font);
+    }
+    h3{
+        font-size: var(--medium-font);
+    }
+}
